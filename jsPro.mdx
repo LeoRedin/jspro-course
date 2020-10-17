@@ -34,7 +34,8 @@ export const theme = themes.code
 - Strings [7-15]
 - Operadores [16-24]
 - Objects [25-32]
-- Arrays [33-X]
+- Arrays [33-46]
+- fFunctions [47-X]
 
 ---
 
@@ -461,7 +462,7 @@ var poke1 = Pokemon('Charmander', 8.5, '61cm', 'Fire')
 ```javascript
 var pokemons = []
 
-pokemons['Charmander', 'Bulbasaur', 'Squirtle']
+pokemons[('Charmander', 'Bulbasaur', 'Squirtle')]
 ```
 
 ---
@@ -474,3 +475,163 @@ pokemons['Charmander', 'Bulbasaur', 'Squirtle']
 // Cada array possui um índice de acesso a cada elemento
 // Esses índices começam com a contagem a partir de 0
 ```
+
+---
+
+# Arrays
+
+### Arrays usam apenas _Dot Notation_
+
+```javascript
+// para acessar algum elemento no array
+// ARRAY[INDEX]
+pokemons[0] // Charmander
+```
+
+---
+
+# Arrays
+
+### Arrays não são tipados
+
+```javascript
+var randomArray = ['string', 7, true]
+```
+
+---
+
+# Arrays
+
+### [].MÉTODOS()
+
+- POP()
+- PUSH()
+- SHIFT()
+- UNSHIFT()
+- CONCAT()
+- REVERSE()
+- SORT()
+- SLICE()
+
+---
+
+# Arrays
+
+### POP()
+
+```javascript
+var pokemons = ['Charmander', 'Bulbasaur', 'Squirtle']
+pokemons.pop()
+// último elemento removido
+pokemons // ['Charmander', 'Bulbasaur']
+```
+
+---
+
+# Arrays
+
+### POP()
+
+```javascript
+var pokemons = ['Charmander', 'Bulbasaur', 'Squirtle']
+var lastPokemon = pokemons.pop()
+// último elemento removido
+pokemons // ['Charmander', 'Bulbasaur']
+lastPokemon // 'Squirtle'
+```
+
+---
+
+# Arrays
+
+### PUSH()
+
+```javascript
+var pokemons = ['Charmander', 'Bulbasaur']
+pokemons.push('Squirtle')
+// adiciona um elemento no final de um array
+pokemons // ['Charmander', 'Bulbasaur', 'Squirtle']
+```
+
+---
+
+# Arrays
+
+### SHIFT()
+
+```javascript
+var pokemons = ['Charmander', 'Bulbasaur']
+pokemons.shift()
+pokemons // ['Bulbasaur']
+```
+
+---
+
+# Arrays
+
+### UNSHIFT()
+
+```javascript
+var pokemons = ['Bulbasaur']
+pokemons.unshift('Charmander', 'Squirtle')
+pokemons // ['Charmander', 'Squirtle', 'Bulbasaur']
+```
+
+---
+
+# Arrays
+
+### CONCAT()
+
+```javascript
+var pokemons = ['Charmander', 'Bulbasaur']
+var waterPokes = ['Squirtle']
+var allPokes = pokemons.concat(waterPokes)
+// allPokes // ['Charmander', 'Bulbasaur', 'Squirtle']
+```
+
+---
+
+# Arrays
+
+### REVERSE()
+
+```javascript
+var pokemons = ['Charmander', 'Bulbasaur', 'Squirtle']
+var reversed = pokemons.reverse()
+reversed // ['Squirtle', 'Bulbasaur', 'Charmander']
+```
+
+---
+
+# Arrays
+
+### SORT()
+
+```javascript
+var pokemons = ['Charmander', 'Bulbasaur', 'Squirtle']
+var alphabetic = pokemons.sort()
+alphabetic // ['Bulbasaur', 'Charmander', 'Squirtle']
+```
+
+---
+
+# Arrays
+
+### SLICE()
+
+```javascript
+// slice recebe 2 argumentos
+// 1 é o início
+// 2 é o final
+// se os argumentos são negativos estamos indo na ordem inversa
+var pokemons = ['Charmander', 'Bulbasaur', 'Squirtle']
+var sliced = pokemons.slice(0, 2)
+sliced // ["Charmander", "Bulbasaur"]
+```
+
+---
+
+# FUNCTIONS
+
+## @TODO
