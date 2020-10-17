@@ -1,4 +1,5 @@
 import {themes} from 'mdx-deck'
+import Text from './Text'
 
 export const theme = themes.code
 
@@ -86,22 +87,16 @@ var $pecial = 'Special'
 
 #### O que são strings?
 
-<p style={{padding: '0 2rem', textAlign: 'center'}}>
-  {' '}
-  É um tipo de dado usado para representar texto e são encapsuladas por aspas
-  simples ou duplas{' '}
-</p>
+<Text
+  text="É um tipo de dado usado para representar texto e são encapsuladas por aspas
+  simples ou duplas"
+/>
 
 ---
 
 # Strings
 
-<p style={{padding: '0 2rem', textAlign: 'center'}}>
-  {' '}
-  Strings fazem parte de um <span style={{fontStyle: 'italic'}}>
-    tipo de dado primitivo
-  </span> do javascript.{' '}
-</p>
+<Text text="Strings fazem parte de um do javascript." />
 
 ### Tipos de dados primitivos
 
@@ -197,9 +192,7 @@ var formFeed = '\f'
 
 ### Propriedade length
 
-<p style={{padding: '0 2rem', textAlign: 'center'}}>
-  Retorna o tamanho de determinada string. Todas as strings possuem esse método.
-</p>
+<Text text="Retorna o tamanho de determinada string. Todas as strings possuem esse método." />
 
 ```javascript
 var name = 'Leonardo'
@@ -213,9 +206,7 @@ nameSize // 8
 
 ### Método: toUpperCase()
 
-<p style={{padding: '0 2rem', textAlign: 'center'}}>
-  A diferença entre uma propriedade e um método é os ()
-</p>
+<Text text="A diferença entre uma propriedade e um método é os ()" />
 
 ```javascript
 var greeting = 'Olá pessoal'
@@ -345,10 +336,10 @@ x++
 
 ## O que são objetos?
 
-<p style={{padding: '0 2rem', textAlign: 'center'}}>
-  Um tipo que consiste em pares de chave/valor. Tudo que não for um dado
-  primitivo(string, number, boolean, null, undefined, symbol) é um objeto
-</p>
+<Text
+  text="Um tipo que consiste em pares de chave/valor. Tudo que não for um dado
+  primitivo(string, number, boolean, null, undefined, symbol) é um objeto"
+/>
 
 ---
 
@@ -465,4 +456,21 @@ var poke1 = Pokemon('Charmander', 8.5, '61cm', 'Fire')
 
 # Arrays
 
-## @TODO
+<Text text="Arrays são objetos com comportamentos diferentes" />
+
+```javascript
+var pokemons = []
+
+pokemons['Charmander', 'Bulbasaur', 'Squirtle']
+```
+
+---
+
+# Arrays
+
+```javascript
+// 'Charmander' é um elemento do array
+// Arrays possuem informações em ordem
+// Cada array possui um índice de acesso a cada elemento
+// Esses índices começam com a contagem a partir de 0
+```
