@@ -32,7 +32,8 @@ export const theme = themes.code
 - Declaração de variáveis [3-6]
 - Strings [7-15]
 - Operadores [16-24]
-- Objects [25-X]
+- Objects [25-32]
+- Arrays [33-X]
 
 ---
 
@@ -341,5 +342,127 @@ x++
 ---
 
 # Objects
+
+## O que são objetos?
+
+<p style={{padding: '0 2rem', textAlign: 'center'}}>
+  Um tipo que consiste em pares de chave/valor. Tudo que não for um dado
+  primitivo(string, number, boolean, null, undefined, symbol) é um objeto
+</p>
+
+---
+
+# Objects
+
+## Object Literal Notation {}
+
+```javascript
+// pensem num pokemon
+var pokemon = {}
+// o que um pokemon tem ?
+```
+
+---
+
+# Objects
+
+## Charmander
+
+[X] Nome
+
+[X] Peso
+
+[X] Altura
+
+[X] Tipo
+
+---
+
+# Objects
+
+```javascript
+var pokemon = {
+  name: 'Charmander',
+  weight: 8.5,
+  height: '61cm',
+  type: 'Fire',
+}
+```
+
+---
+
+# Objects
+
+## Dot Notation
+
+```javascript
+var pokemon = {}
+
+object.property = value
+
+pokemon.name = 'Charmander'
+pokemon.weight = 8.5
+pokemon.height = '61cm'
+pokemon.type = 'Fire'
+```
+
+---
+
+# Objects
+
+## Bracket Notation
+
+```javascript
+var pokemon = {}
+
+object['property'] = value
+
+pokemon['name'] = 'Charmander'
+pokemon['weight'] = 8.5
+pokemon['height'] = '61cm'
+pokemon['type'] = 'Fire'
+```
+
+---
+
+# Objects
+
+## Object Constructor
+
+```javascript
+//e se fôssemos criar vários pokemons ?
+var pokemon1 = {
+  name: 'Charmander',
+  weight: 8.5,
+  height: '61cm',
+  type: 'Fire',
+}
+
+var pokemon2 = {
+  name: 'Bulbasaur',
+  weight: 6.9,
+  height: '71.1cm',
+  type: 'Grass & Poison',
+}
+```
+
+---
+
+# Objects
+
+```javascript
+function Pokemon(name, weight, height, type) {
+  this.name = name
+  this.weight = weight
+  this.height = height
+  this.type = type
+}
+
+var poke1 = Pokemon('Charmander', 8.5, '61cm', 'Fire')
+```
+
+---
+
+# Arrays
 
 ## @TODO
