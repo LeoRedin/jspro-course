@@ -1,0 +1,228 @@
+import {themes} from 'mdx-deck'
+
+export const theme = themes.code
+
+# JS PRO
+
+## Bem vindos ao curso de Javascript Pro
+
+### Turma JSPRO123
+
+---
+
+# Quem sou eu
+
+- 📛 Leonardo Redin
+- 👨 25 anos
+- 📓 Desenvolvedor full stack JS
+- 👔 Atualmente trabalhando para a Renner
+
+## Hobbies e curiosidades sobre mim
+
+- Tenho **13** 🐈
+- Tenho **04** 🐕
+- Toco 🎸
+- Sou goleiro 🏅
+- Amo cozinhar 🍲
+
+---
+
+# O que vamos aprender:
+
+- Declaração de variáveis [3-6]
+- Strings [7-15]
+- Operadores [16-X]
+
+---
+
+# Variáveis em JS
+
+### O que **NÃO** pode
+
+[] Iniciar com _números_
+
+[] Conter espaços
+
+[] Utilizar palavras reservadas
+
+---
+
+# Variáveis em JS
+
+```javascript
+  var 1number = 25
+  var my variable = "Leonardo"
+  var var = "Redin"
+```
+
+---
+
+# Variáveis em JS
+
+### Boas práticas e o que é permitido
+
+[X] Utilizar _sempre_ camelCase
+
+[X] Iniciar com letras maiúsculas ou minúsculas
+
+[X] Começar com o sinal de **`$`**
+
+---
+
+# Variáveis em JS
+
+```javascript
+var age = 25
+var name = 'Leonardo'
+var surName = 'Redin'
+var $pecial = 'Special'
+```
+
+---
+
+# Strings
+
+#### O que são strings?
+
+<p style={{padding: '0 2rem', textAlign: 'center'}}>
+  {' '}
+  É um tipo de dado usado para representar texto e são encapsuladas por aspas
+  simples ou duplas{' '}
+</p>
+
+---
+
+# Strings
+
+<p style={{padding: '0 2rem', textAlign: 'center'}}>
+  {' '}
+  Strings fazem parte de um <span style={{fontStyle: 'italic'}}>
+    tipo de dado primitivo
+  </span> do javascript.{' '}
+</p>
+
+### Tipos de dados primitivos
+
+- string
+- number
+- boolean
+- null
+- undefined
+- symbol
+
+---
+
+# Strings
+
+```javascript
+var name = 'Leonardo'
+var name = 'Leonardo'
+```
+
+### Boas práticas
+
+- escolher uma das abordagens e seguir durante todo o projeto
+- respeitar o styleguide do time
+
+### Erro
+
+```javascript
+var name = 'Leonardo"
+```
+
+---
+
+# Strings
+
+### Vamos entender 4 tópicos sobre strings
+
+- Citações dentro de strings
+- Caracteres especiais
+- Propriedade chamada _length_
+- Alguns exemplos de _métodos_
+
+---
+
+# Strings
+
+### Citação
+
+⚠ Erro
+
+```javascript
+var phrase = 'João disse: 'Eu estou doente!''
+```
+
+✅ Correto
+
+```javascript
+var phrase = 'João disse: "Eu estou doente!"'
+var phrase = "João disse: 'Eu estou doente!'"
+```
+
+---
+
+# Strings
+
+### Caso especial: \
+
+Façam esse teste no console:
+
+var phrase = "João disse: \'Eu estou doente!\'"
+
+O caractere \ torna o próximo caractere em string
+
+---
+
+# Strings
+
+#### Alguns usos:
+
+```javascript
+var nullCharacter = '\0'
+var backslash = '\\'
+var newLine = '\n'
+var carriageReturn = '\r'
+var verticalTab = '\t'
+var tab = '\t'
+var backspace = '\b'
+var formFeed = '\f'
+```
+
+---
+
+# Strings
+
+### Propriedade length
+
+<p style={{padding: '0 2rem', textAlign: 'center'}}>
+  Retorna o tamanho de determinada string. Todas as strings possuem esse método.
+</p>
+
+```javascript
+var name = 'Leonardo'
+var nameSize = name.length
+nameSize // 8
+```
+
+---
+
+# Strings
+
+### Método: toUpperCase()
+
+<p style={{padding: '0 2rem', textAlign: 'center'}}>
+  A diferença entre uma propriedade e um método é os ()
+</p>
+
+```javascript
+var greeting = 'Olá pessoal'
+var allUpper = greeting.toUpperCase()
+allUpper // OLÁ PESSOAL
+```
+
+--- 
+
+# Operadores
+
+## @TODO
