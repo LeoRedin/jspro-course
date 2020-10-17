@@ -31,7 +31,8 @@ export const theme = themes.code
 
 - Declaração de variáveis [3-6]
 - Strings [7-15]
-- Operadores [16-X]
+- Operadores [16-24]
+- Objects [25-X]
 
 ---
 
@@ -221,8 +222,124 @@ var allUpper = greeting.toUpperCase()
 allUpper // OLÁ PESSOAL
 ```
 
---- 
+---
 
 # Operadores
+
+- \+
+- \-
+- \*
+- /
+- %
+- =
+- \!
+
+---
+
+# Operadores
+
+### Em JS temos 3 tipos principais de operadores:
+
+- Unário
+- Binário
+- Ternário
+
+---
+
+# Operadores
+
+### Binário
+
+#### Necessitam de **2** operandos
+
+```javascript
+2 + 3
+x * y
+10 % 2
+```
+
+---
+
+# Operadores
+
+### Unário
+
+#### Necessita de apenas **1** operando
+
+```javascript
+y++
+++z
+```
+
+---
+
+# Operadores
+
+### Atitméticos
+
+```javascript
+var count = 10 + 5 - 4 // 11
+var mult = 9 * 3 // 27
+var div = 12 / 4 // 3
+var rest = 21 % 4 // 1
+```
+
+---
+
+# Operadores
+
+### Assignment operators
+
+#### Já utilizamos esse bastatante x = 17
+
+```javascript
+var count = 5
+count = count + 12
+count += 12
+count -= 7
+```
+
+---
+
+# Operadores
+
+### Operadores de comparação
+
+#### Retornam um valor boleano ao comparar valores
+
+##### Valores podem ser _numéricos_, _string_, _logico_ ou _objetos_
+
+```javascript
+// Operador de comparação
+var x = 7
+var y = '7'
+x == y // true
+x === y // false
+```
+
+---
+
+# Operadores
+
+### Incremento(++) e Decremento(--)
+
+```javascript
+var x = 7
+// Qual a diferença entre :
+x++
+++x
+```
+
+---
+
+# Operadores
+
+### x++ retorna o valor _antes_ de ser incrementado
+
+### ++x retorna o valor _após_ ser incrementado
+
+---
+
+# Objects
 
 ## @TODO
