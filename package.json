@@ -9,5 +9,8 @@
   "scripts": {
     "start": "mdx-deck jsPro.mdx",
     "build": "mdx-deck build jsPro.mdx"
+  },
+  "dependencies": {
+    "mdx-code": "^2.0.0"
   }
 }

@@ -1,4 +1,6 @@
 import {themes} from 'mdx-deck'
+import Code from 'mdx-code'
+
 import Text from './Text'
 
 export const theme = themes.code
@@ -35,7 +37,7 @@ export const theme = themes.code
 - Operadores [16-24]
 - Objects [25-32]
 - Arrays [33-46]
-- fFunctions [47-X]
+- Functions [47-X]
 
 ---
 
@@ -387,16 +389,24 @@ var pokemon = {
 
 ## Dot Notation
 
-```javascript
+<Code>
+
+
+```js
 var pokemon = {}
 
-object.property = value
+// object.property = value
 
 pokemon.name = 'Charmander'
 pokemon.weight = 8.5
 pokemon.height = '61cm'
 pokemon.type = 'Fire'
+
+console.log(pokemon)
 ```
+
+</Code>
+
 
 ---
 
@@ -404,16 +414,24 @@ pokemon.type = 'Fire'
 
 ## Bracket Notation
 
+<Code>
+
+
 ```javascript
 var pokemon = {}
 
-object['property'] = value
+// object['property'] = value
 
 pokemon['name'] = 'Charmander'
 pokemon['weight'] = 8.5
 pokemon['height'] = '61cm'
 pokemon['type'] = 'Fire'
+
+console.log(pokemon)
 ```
+
+</Code>
+
 
 ---
 
@@ -459,11 +477,19 @@ var poke1 = Pokemon('Charmander', 8.5, '61cm', 'Fire')
 
 <Text text="Arrays são objetos com comportamentos diferentes" />
 
-```javascript
+<Code>
+
+
+```js
 var pokemons = []
 
-pokemons[('Charmander', 'Bulbasaur', 'Squirtle')]
+pokemons = ['Charmander', 'Bulbasaur', 'Squirtle']
+
+console.log(pokemons)
 ```
+
+</Code>
+
 
 ---
 
@@ -482,11 +508,21 @@ pokemons[('Charmander', 'Bulbasaur', 'Squirtle')]
 
 ### Arrays usam apenas _Dot Notation_
 
-```javascript
+<Code>
+
+
+```js
 // para acessar algum elemento no array
 // ARRAY[INDEX]
-pokemons[0] // Charmander
+pokemons = ['Charmander', 'Bulbasaur', 'Squirtle']
+
+console.log(pokemons[0])
+
+// console.log(pokemons.0)
 ```
+
+</Code>
+
 
 ---
 
@@ -519,26 +555,21 @@ var randomArray = ['string', 7, true]
 
 ### POP()
 
-```javascript
-var pokemons = ['Charmander', 'Bulbasaur', 'Squirtle']
-pokemons.pop()
-// último elemento removido
-pokemons // ['Charmander', 'Bulbasaur']
-```
+<Code>
 
----
 
-# Arrays
-
-### POP()
-
-```javascript
+```js
 var pokemons = ['Charmander', 'Bulbasaur', 'Squirtle']
 var lastPokemon = pokemons.pop()
 // último elemento removido
 pokemons // ['Charmander', 'Bulbasaur']
-lastPokemon // 'Squirtle'
+
+console.log(pokemons)
+console.log(lastPokemon)
 ```
+
+</Code>
+
 
 ---
 
@@ -546,12 +577,17 @@ lastPokemon // 'Squirtle'
 
 ### PUSH()
 
-```javascript
+<Code>
+
+```js
 var pokemons = ['Charmander', 'Bulbasaur']
 pokemons.push('Squirtle')
 // adiciona um elemento no final de um array
-pokemons // ['Charmander', 'Bulbasaur', 'Squirtle']
+
+console.log(pokemons)
 ```
+
+</Code>
 
 ---
 
@@ -559,11 +595,16 @@ pokemons // ['Charmander', 'Bulbasaur', 'Squirtle']
 
 ### SHIFT()
 
-```javascript
+<Code>
+
+```js
 var pokemons = ['Charmander', 'Bulbasaur']
 pokemons.shift()
-pokemons // ['Bulbasaur']
+
+console.log(pokemons)
 ```
+
+</Code>
 
 ---
 
@@ -571,11 +612,16 @@ pokemons // ['Bulbasaur']
 
 ### UNSHIFT()
 
-```javascript
+<Code>
+
+```js
 var pokemons = ['Bulbasaur']
 pokemons.unshift('Charmander', 'Squirtle')
-pokemons // ['Charmander', 'Squirtle', 'Bulbasaur']
+
+console.log(pokemons)
 ```
+
+</Code>
 
 ---
 
@@ -583,12 +629,17 @@ pokemons // ['Charmander', 'Squirtle', 'Bulbasaur']
 
 ### CONCAT()
 
-```javascript
+<Code>
+
+```js
 var pokemons = ['Charmander', 'Bulbasaur']
 var waterPokes = ['Squirtle']
 var allPokes = pokemons.concat(waterPokes)
-// allPokes // ['Charmander', 'Bulbasaur', 'Squirtle']
+
+console.log(allPokes)
 ```
+
+</Code>
 
 ---
 
@@ -596,11 +647,16 @@ var allPokes = pokemons.concat(waterPokes)
 
 ### REVERSE()
 
-```javascript
+<Code>
+
+```js
 var pokemons = ['Charmander', 'Bulbasaur', 'Squirtle']
 var reversed = pokemons.reverse()
-reversed // ['Squirtle', 'Bulbasaur', 'Charmander']
+
+console.log(reversed)
 ```
+
+</Code>
 
 ---
 
@@ -608,11 +664,16 @@ reversed // ['Squirtle', 'Bulbasaur', 'Charmander']
 
 ### SORT()
 
-```javascript
+<Code>
+
+```js
 var pokemons = ['Charmander', 'Bulbasaur', 'Squirtle']
 var alphabetic = pokemons.sort()
-alphabetic // ['Bulbasaur', 'Charmander', 'Squirtle']
+
+console.log(alphabetic)
 ```
+
+</Code>
 
 ---
 
@@ -620,15 +681,20 @@ alphabetic // ['Bulbasaur', 'Charmander', 'Squirtle']
 
 ### SLICE()
 
-```javascript
+<Code>
+
+```js
 // slice recebe 2 argumentos
 // 1 é o início
 // 2 é o final
 // se os argumentos são negativos estamos indo na ordem inversa
 var pokemons = ['Charmander', 'Bulbasaur', 'Squirtle']
 var sliced = pokemons.slice(0, 2)
-sliced // ["Charmander", "Bulbasaur"]
+
+console.log(sliced)
 ```
+
+</Code>
 
 ---
 
