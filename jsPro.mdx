@@ -37,7 +37,8 @@ export const theme = themes.code
 - Operadores [16-24]
 - Objects [25-32]
 - Arrays [33-46]
-- Functions [47-X]
+- Functions [47-57]
+- Loops & Condicionais [58-70]
 
 ---
 
@@ -926,3 +927,171 @@ scope
 
 </Code>
 
+
+---
+
+# Loops e Condicionais
+
+## Antes de vermos os laços e condicionais
+
+### O que são valores _TRUE_ e _FALSE_
+
+---
+
+# Loops e Condicionais
+
+### FALSE
+
+- false
+- 0
+- null
+- undefined
+- NaN
+
+---
+
+# Loops e Condicionais
+
+### TRUE
+
+- Tudo o que não for falso
+
+---
+
+# Loops e Condicionais
+
+### Operadores lógicos
+
+- (AND) &&
+- (OR) ||
+
+---
+
+# Loops e Condicionais
+
+### Condicional IF
+
+```javascript
+var favoritePokemon = 'Charmander'
+if (favoritePokemon === 'Charmander') {
+  console.log('Yay! Charmander é o máximo!')
+} else {
+  console.log('Tudo bem, outros pokemons são ótimos também')
+}
+```
+
+---
+
+# Loops e Condicionais
+
+### Condicionais em cadeia
+
+```javascript
+if (score > 90) {
+  console.log('Sua nota final é A')
+} else if (score > 80) {
+  console.log('Sua nota final é B')
+} else if (score > 70) {
+  console.log('Sua nota final é C')
+} else {
+  console.log('Acho melhor estudar um pouco mais :)')
+}
+```
+
+---
+
+# Loops e Condicionais
+
+### Condicional SWITCH
+
+```javascript
+switch (expression) {
+  case x:
+    // código
+    break
+  case y:
+  // return codigo
+  default:
+  // código
+}
+```
+
+---
+
+# Loops e Condicionais
+
+### WHILE, DO/WHILE, FOR
+
+---
+
+# Loops e Condicionais
+
+### WHILE
+
+```javascript
+while (expression) {
+  // código aqui
+}
+```
+
+---
+
+# Loops e Condicionais
+
+### DO/WHILE
+
+```javascript
+// vantagem é que aqui sempre vamos
+// executar o códio pelo menos 1 vez
+do {
+  // código aqui
+} while (expression)
+```
+
+---
+
+# Loops e Condicionais
+
+### FOR
+
+```javascript
+for (inicialização; condição; atualização) {
+  // código aqui
+}
+```
+
+---
+
+# Loops e Condicionais
+
+### FOR...IN
+
+```javascript
+var object = {a: 1, b: 2, c: 3}
+
+for (var property in object) {
+  console.log(`${property}: ${object[property]}`)
+}
+```
+
+---
+
+# Loops e Condicionais
+
+### FOR...OF
+
+```javascript
+var arr = [1, 2, 3]
+
+for (var value of array) {
+  console.log(value)
+}
+```
+
+---
+
+# Fim da Parte 1
+
+## Agora vamos para um JS moderno
+
+## ES6+
