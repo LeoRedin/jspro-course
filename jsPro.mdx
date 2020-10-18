@@ -579,6 +579,7 @@ console.log(lastPokemon)
 
 <Code>
 
+
 ```js
 var pokemons = ['Charmander', 'Bulbasaur']
 pokemons.push('Squirtle')
@@ -589,6 +590,7 @@ console.log(pokemons)
 
 </Code>
 
+
 ---
 
 # Arrays
@@ -596,6 +598,7 @@ console.log(pokemons)
 ### SHIFT()
 
 <Code>
+
 
 ```js
 var pokemons = ['Charmander', 'Bulbasaur']
@@ -606,6 +609,7 @@ console.log(pokemons)
 
 </Code>
 
+
 ---
 
 # Arrays
@@ -613,6 +617,7 @@ console.log(pokemons)
 ### UNSHIFT()
 
 <Code>
+
 
 ```js
 var pokemons = ['Bulbasaur']
@@ -623,6 +628,7 @@ console.log(pokemons)
 
 </Code>
 
+
 ---
 
 # Arrays
@@ -630,6 +636,7 @@ console.log(pokemons)
 ### CONCAT()
 
 <Code>
+
 
 ```js
 var pokemons = ['Charmander', 'Bulbasaur']
@@ -641,6 +648,7 @@ console.log(allPokes)
 
 </Code>
 
+
 ---
 
 # Arrays
@@ -648,6 +656,7 @@ console.log(allPokes)
 ### REVERSE()
 
 <Code>
+
 
 ```js
 var pokemons = ['Charmander', 'Bulbasaur', 'Squirtle']
@@ -658,6 +667,7 @@ console.log(reversed)
 
 </Code>
 
+
 ---
 
 # Arrays
@@ -665,6 +675,7 @@ console.log(reversed)
 ### SORT()
 
 <Code>
+
 
 ```js
 var pokemons = ['Charmander', 'Bulbasaur', 'Squirtle']
@@ -675,6 +686,7 @@ console.log(alphabetic)
 
 </Code>
 
+
 ---
 
 # Arrays
@@ -682,6 +694,7 @@ console.log(alphabetic)
 ### SLICE()
 
 <Code>
+
 
 ```js
 // slice recebe 2 argumentos
@@ -696,8 +709,220 @@ console.log(sliced)
 
 </Code>
 
+
 ---
 
 # FUNCTIONS
 
-## @TODO
+## Declaração de funções
+
+<Code>
+
+
+```js
+function favoritePokemon() {
+  return 'Meu Pokemon favorito é o Charmander'
+}
+
+console.log(favoritePokemon())
+```
+
+</Code>
+
+
+---
+
+# Functions
+
+## Parâmetros(paramOne, paramTwo, ...)
+
+<Code>
+
+
+```js
+function yourFavoritePokemon(pokemonName) {
+  return 'Seu Pokemon favorito é ' + pokemonName
+}
+
+console.log(yourFavoritePokemon('Bulbasaur'))
+```
+
+</Code>
+
+
+---
+
+# Functions
+
+- Function Expression
+- Funções anônimas
+- IIFE
+
+---
+
+# Functions
+
+## Function Expression e Função Anônima
+
+<Code>
+
+
+```js
+var favoritePokemon = function () {
+  return 'Meu Pokemon favorito é o Charmander'
+}
+
+console.log(favoritePokemon())
+```
+
+</Code>
+
+
+---
+
+# Functions
+
+### Qual a diferença entre
+
+```javascript
+function favoritePokemon() {
+  return 'Meu Pokemon favorito é o Charmander'
+}
+
+var favoritePokemon = function () {
+  return 'Meu Pokemon favorito é o Charmander'
+}
+```
+
+---
+
+# Functions
+
+### Hoist de variáveis
+
+<Code>
+
+
+```js
+console.log(favoritePokemon())
+
+function favoritePokemon() {
+  return 'Meu Pokemon favorito é o Charmander'
+}
+
+/*
+console.log(favoritePokemon())
+
+var favoritePokemon = function () {
+  return 'Meu Pokemon favorito é o Charmander'
+}
+*/
+```
+
+</Code>
+
+
+---
+
+# Functions
+
+### IIFE
+
+#### Immediately Invoked Function Expressions
+
+```javascript
+var greetFullName = (function (firstName, lastName) {
+  return 'Olá' + firstName + '' + lastName
+})()
+```
+
+---
+
+# Functions
+
+## Escopo
+
+<Text text="Javascript possui 2 escopos: global e local. Variáveis declaradas fora de uma função são globais. Variáveis declaradas dentro de uma função são locais" />
+
+---
+
+# Functions
+
+## Escopo
+
+<Code>
+
+
+```js
+var scope = 'public'
+
+function checkScope() {
+  var scope = 'private'
+  return scope
+}
+
+console.log(scope)
+```
+
+</Code>
+
+
+---
+
+# Functions
+
+## Escopo
+
+<Code>
+
+
+```js
+var scope = 'public'
+var newScope = 'variável global'
+
+function checkScope() {
+  var scope = 'private'
+  return [scope, newScope]
+}
+
+console.log(newScope)
+console.log(checkScope())
+```
+
+</Code>
+
+
+---
+
+# Functions
+
+## Como JS procura as variáveis por Escopo
+
+- Child
+- Parent
+- Global
+
+---
+
+# Functions
+
+## Problemas com escopo e VAR
+
+<Code>
+
+
+```js
+var scope = 'public'
+
+function checkScope() {
+  scope = 'private'
+  return scope
+}
+
+scope
+// checkScope()
+// scope
+```
+
+</Code>
+
