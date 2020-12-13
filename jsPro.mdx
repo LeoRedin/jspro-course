@@ -390,9 +390,6 @@ var pokemon = {
 
 ## Dot Notation
 
-<Code>
-
-
 ```js
 var pokemon = {}
 
@@ -406,17 +403,11 @@ pokemon.type = 'Fire'
 console.log(pokemon)
 ```
 
-</Code>
-
-
 ---
 
 # Objects
 
 ## Bracket Notation
-
-<Code>
-
 
 ```javascript
 var pokemon = {}
@@ -430,9 +421,6 @@ pokemon['type'] = 'Fire'
 
 console.log(pokemon)
 ```
-
-</Code>
-
 
 ---
 
@@ -480,9 +468,6 @@ var poke1 = Pokemon('Charmander', 8.5, '61cm', 'Fire')
   Arrays são objetos com comportamentos diferentes
 </p>
 
-<Code>
-
-
 ```js
 var pokemons = []
 
@@ -490,9 +475,6 @@ pokemons = ['Charmander', 'Bulbasaur', 'Squirtle']
 
 console.log(pokemons)
 ```
-
-</Code>
-
 
 ---
 
@@ -511,9 +493,6 @@ console.log(pokemons)
 
 ### Arrays usam apenas _Dot Notation_
 
-<Code>
-
-
 ```js
 // para acessar algum elemento no array
 // ARRAY[INDEX]
@@ -523,9 +502,6 @@ console.log(pokemons[0])
 
 // console.log(pokemons.0)
 ```
-
-</Code>
-
 
 ---
 
@@ -558,9 +534,6 @@ var randomArray = ['string', 7, true]
 
 ### POP()
 
-<Code>
-
-
 ```js
 var pokemons = ['Charmander', 'Bulbasaur', 'Squirtle']
 var lastPokemon = pokemons.pop()
@@ -571,17 +544,11 @@ console.log(pokemons)
 console.log(lastPokemon)
 ```
 
-</Code>
-
-
 ---
 
 # Arrays
 
 ### PUSH()
-
-<Code>
-
 
 ```js
 var pokemons = ['Charmander', 'Bulbasaur']
@@ -591,17 +558,11 @@ pokemons.push('Squirtle')
 console.log(pokemons)
 ```
 
-</Code>
-
-
 ---
 
 # Arrays
 
 ### SHIFT()
-
-<Code>
-
 
 ```js
 var pokemons = ['Charmander', 'Bulbasaur']
@@ -610,17 +571,11 @@ pokemons.shift()
 console.log(pokemons)
 ```
 
-</Code>
-
-
 ---
 
 # Arrays
 
 ### UNSHIFT()
-
-<Code>
-
 
 ```js
 var pokemons = ['Bulbasaur']
@@ -629,17 +584,11 @@ pokemons.unshift('Charmander', 'Squirtle')
 console.log(pokemons)
 ```
 
-</Code>
-
-
 ---
 
 # Arrays
 
 ### CONCAT()
-
-<Code>
-
 
 ```js
 var pokemons = ['Charmander', 'Bulbasaur']
@@ -649,17 +598,11 @@ var allPokes = pokemons.concat(waterPokes)
 console.log(allPokes)
 ```
 
-</Code>
-
-
 ---
 
 # Arrays
 
 ### REVERSE()
-
-<Code>
-
 
 ```js
 var pokemons = ['Charmander', 'Bulbasaur', 'Squirtle']
@@ -668,17 +611,11 @@ var reversed = pokemons.reverse()
 console.log(reversed)
 ```
 
-</Code>
-
-
 ---
 
 # Arrays
 
 ### SORT()
-
-<Code>
-
 
 ```js
 var pokemons = ['Charmander', 'Bulbasaur', 'Squirtle']
@@ -687,17 +624,11 @@ var alphabetic = pokemons.sort()
 console.log(alphabetic)
 ```
 
-</Code>
-
-
 ---
 
 # Arrays
 
 ### SLICE()
-
-<Code>
-
 
 ```js
 // slice recebe 2 argumentos
@@ -710,17 +641,11 @@ var sliced = pokemons.slice(0, 2)
 console.log(sliced)
 ```
 
-</Code>
-
-
 ---
 
 # FUNCTIONS
 
 ## Declaração de funções
-
-<Code>
-
 
 ```js
 function favoritePokemon() {
@@ -730,17 +655,11 @@ function favoritePokemon() {
 console.log(favoritePokemon())
 ```
 
-</Code>
-
-
 ---
 
 # Functions
 
 ## Parâmetros(paramOne, paramTwo, ...)
-
-<Code>
-
 
 ```js
 function yourFavoritePokemon(pokemonName) {
@@ -749,9 +668,6 @@ function yourFavoritePokemon(pokemonName) {
 
 console.log(yourFavoritePokemon('Bulbasaur'))
 ```
-
-</Code>
-
 
 ---
 
@@ -767,9 +683,6 @@ console.log(yourFavoritePokemon('Bulbasaur'))
 
 ## Function Expression e Função Anônima
 
-<Code>
-
-
 ```js
 var favoritePokemon = function () {
   return 'Meu Pokemon favorito é o Charmander'
@@ -777,9 +690,6 @@ var favoritePokemon = function () {
 
 console.log(favoritePokemon())
 ```
-
-</Code>
-
 
 ---
 
@@ -803,9 +713,6 @@ var favoritePokemon = function () {
 
 ### Hoist de variáveis
 
-<Code>
-
-
 ```js
 console.log(favoritePokemon())
 
@@ -821,9 +728,6 @@ var favoritePokemon = function () {
 }
 */
 ```
-
-</Code>
-
 
 ---
 
@@ -856,9 +760,6 @@ var greetFullName = (function (firstName, lastName) {
 
 ## Escopo
 
-<Code>
-
-
 ```js
 var scope = 'public'
 
@@ -870,17 +771,11 @@ function checkScope() {
 console.log(scope)
 ```
 
-</Code>
-
-
 ---
 
 # Functions
 
 ## Escopo
-
-<Code>
-
 
 ```js
 var scope = 'public'
@@ -894,9 +789,6 @@ function checkScope() {
 console.log(newScope)
 console.log(checkScope())
 ```
-
-</Code>
-
 
 ---
 
@@ -914,9 +806,6 @@ console.log(checkScope())
 
 ## Problemas com escopo e VAR
 
-<Code>
-
-
 ```js
 var scope = 'public'
 
@@ -929,9 +818,6 @@ scope
 // checkScope()
 // scope
 ```
-
-</Code>
-
 
 ---
 

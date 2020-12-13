@@ -8,9 +8,11 @@
   },
   "scripts": {
     "start": "mdx-deck jsPro.mdx",
-    "build": "mdx-deck build jsPro.mdx"
+    "build": "mdx-deck build jsPro.mdx",
+    "generate-pdf": "website-pdf http://localhost:8000/print -o deck.pdf"
   },
   "dependencies": {
-    "mdx-code": "^2.0.0"
+    "mdx-code": "^2.0.0",
+    "website-pdf": "^4.1.0"
   }
 }
